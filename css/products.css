@@ -1,0 +1,75 @@
+section#products {
+  
+}
+section#products div.wrap {
+  
+}
+section#products div.wrap div.productstitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+section#products div.wrap div.productstitle h2 {
+  
+}
+section#products div.wrap div.productstitle h2 a {
+  
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 2;
+}
+section#products div.wrap div.productstitle a.showmore {
+  
+  border-bottom: 2px solid;
+  line-height: 2;
+  font-size: 14px;
+  font-weight: 700;
+}
+section#products div.wrap div.productsbody {
+  
+}
+section#products div.wrap div.productsbody ul.productswrap {
+  
+}
+section#products div.wrap div.productsbody ul.productswrap li {
+  
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+section#products div.wrap div.productsbody ul.productswrap li a.productsitem {
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+section#products div.wrap div.productsbody ul.productswrap li a.productsitem img {
+  width: 100%;
+}
+section#products div.wrap div.productsbody ul.productswrap li a.productsitem h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+section#products div.wrap div.productsbody ul.productswrap li a.productsitem h3:hover {
+  text-decoration: underline;
+}
+section#products div.wrap div.productsbody ul.productswrap button {
+  width: 50px;
+  height: 100px;
+  z-index: 2;
+  background-position: center;
+  background-size: cover
+}
+section#products div.wrap div.productsbody ul.productswrap button::before {
+  display: none;
+}
+section#products div.wrap div.productsbody ul.productswrap .slick-prev {
+  background-image: url(../img/prev.svg);
+  left: -50px;
+}
+section#products div.wrap div.productsbody ul.productswrap .slick-next {
+  background-image: url(../img/next.svg);
+  right: -50px;
+}

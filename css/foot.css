@@ -1,0 +1,161 @@
+section#foot {
+  
+  background-color: #454a56;
+}
+section#foot div.wrap {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#foot div.wrap ul.fnbtop {
+  
+  display: flex;
+  width: 100%;
+}
+section#foot div.wrap ul.fnbtop > li {
+  
+  width: calc(100% / 4);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+section#foot div.wrap ul.fnbtop li h2 {
+  
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+section#foot div.wrap ul.fnbtop li ul.footinfo {
+  
+  display: flex;
+  flex-direction: column;
+}
+section#foot div.wrap ul.fnbtop li ul.footinfo li {
+  
+  display: flex;
+}
+section#foot div.wrap ul.fnbtop li ul.footinfo li a {
+  
+  font-size: 14px;
+  padding: 10px 0;
+  display: block;
+  color: white;
+}
+section#foot div.wrap ul.fnbtop li ul.footinfo li a:hover {
+  text-decoration: underline;
+}
+section#foot div.wrap ul.fnbtop li ul.footcontact {
+  
+}
+section#foot div.wrap ul.fnbtop li ul.footcontact li {
+  
+}
+section#foot div.wrap ul.fnbtop li ul.footcontact li:nth-child(3) {
+  color: white;
+  font-size: 14px;
+  padding: 10px 0;
+}
+section#foot div.wrap ul.fnbtop li ul.footcontact li a {
+  font-size: 14px;
+  padding: 10px 0;
+  display: block;
+  color: white;
+}
+section#foot div.wrap ul.fnbtop li ul.footcontact li a:hover {
+  text-decoration: underline;
+}
+section#foot div.wrap ul.fnbtop li ul.footlogo {
+  
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  column-gap: 5px;
+}
+section#foot div.wrap ul.fnbtop li ul.footlogo li {
+  
+  width: calc(100% / 6);
+}
+section#foot div.wrap ul.fnbtop li ul.footlogo li:nth-child(1) {
+  
+  width: 100%;
+}
+section#foot div.wrap ul.fnbtop li ul.footlogo li a {
+  
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+section#foot div.wrap ul.fnbtop li ul.footlogo li:nth-child(1) a {
+  
+  width: calc(100% / 3);
+}
+section#foot div.wrap ul.fnbtop li ul.footlogo li a img {
+  
+  width: 100%;
+}
+section#foot div.wrap ul.fnbtop li ul.sns {
+  
+  display: flex;
+  gap: 25px;
+}
+section#foot div.wrap ul.fnbtop li ul.sns li {
+  
+}
+section#foot div.wrap ul.fnbtop li ul.sns li a {
+  
+}
+section#foot div.wrap ul.fnbtop li ul.sns li a svg {
+  
+}
+section#foot div.wrap ul.fnbtop li select#brandsites {
+  
+  width: 60%;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  appearance: none;
+  background-image: url(../img/selectarrow.svg);
+  background-repeat: no-repeat;
+  background-position-x: 185px;
+  background-size: 10%;
+  background-position-y: center;
+}
+section#foot div.wrap ul.fnbtop li select#brandsites .brandtitle {
+  display: none;
+}
+section#foot div.wrap ul.fnbtop li select#brandsites option {
+  background-color: gray;
+}
+section#foot div.wrap ul.fnbtop li select#brandsites optgroup {
+  background-color: gray;
+  font-style: normal;
+}
+section#foot div.wrap ul.fnbbtm {
+  
+  display: flex;
+  padding: 25px 0;
+}
+section#foot div.wrap ul.fnbbtm li {
+  
+}
+section#foot div.wrap ul.fnbbtm li a {
+  
+  color: white;
+  display: block;
+  font-size: 14px;
+  padding: 0 5px;
+  border-right: 1px solid white;
+}
+section#foot div.wrap ul.fnbbtm li a:hover {
+  text-decoration: underline;
+}
+section#foot div.wrap ul.fnbbtm li:nth-child(2) a {
+  color: red;
+}
+section#foot div.wrap ul.fnbbtm li:nth-child(4) a {
+  border: none;
+}

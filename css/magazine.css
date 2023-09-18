@@ -1,0 +1,93 @@
+section#magazine {
+  
+}
+section#magazine div.wrap {
+  
+}
+section#magazine div.wrap div.magazinetitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+section#magazine div.wrap div.magazinetitle h2 {
+  
+}
+section#magazine div.wrap div.magazinetitle h2 a {
+  
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 2;
+}
+section#magazine div.wrap div.magazinetitle a.showmore {
+  
+  border-bottom: 2px solid;
+  line-height: 2;
+  font-size: 14px;
+  font-weight: 700;
+}
+section#magazine div.wrap div.magazinebody {
+  
+}
+section#magazine div.wrap div.magazinebody ul {
+  
+  display: flex;
+  justify-content: space-between;
+}
+section#magazine div.wrap div.magazinebody ul li {
+  
+  width: calc((100% / 3) - 20px);
+}
+section#magazine div.wrap div.magazinebody ul li a {
+  
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+section#magazine div.wrap div.magazinebody ul li a::after {
+  content: "";
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.5));
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  transition: all 0.5s;
+}
+section#magazine div.wrap div.magazinebody ul li:hover a::after {
+  height: 100%;
+}
+section#magazine div.wrap div.magazinebody ul li a img {
+  
+  width: 100%;
+}
+section#magazine div.wrap div.magazinebody ul li a div.magazineinfo {
+  
+  position: absolute;
+  padding: 30px;
+  bottom: 0;
+  color: white;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+section#magazine div.wrap div.magazinebody ul li a div.magazineinfo h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+section#magazine div.wrap div.magazinebody ul li a div.magazineinfo h3:hover {
+  text-decoration: underline;
+}
+section#magazine div.wrap div.magazinebody ul li a div.magazineinfo p {
+  
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 18px;
+}
+section#magazine div.wrap div.magazinebody ul li a div.magazineinfo p:hover {
+  text-decoration: underline;
+}

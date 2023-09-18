@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(UZI)파리바게트</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/magazine.css">
+    <link rel="stylesheet" href="css/story.css">
+    <link rel="stylesheet" href="css/promotion.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/instanotice.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".searchbutton").click(function(){
+                $(".searchwrap").addClass("searchactive");
+                return false
+            });
+
+            $(".closesearch").click(function(){
+                $(".searchwrap").removeClass("searchactive");
+                return false
+            });
+
+            $("header div.wrap ul.navleft li.guide div.guidewrap").hide();
+            $("header div.wrap ul.navleft li.guide").hover(
+                function(){
+                    $("header div.wrap ul.navleft li.guide div.guidewrap").show();
+                },
+                function(){
+                    $("header div.wrap ul.navleft li.guide div.guidewrap").hide();
+                }
+            );
+        });
+    </script>
+    <!-- 슬릭 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.promotionwrap').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1
+            });
+
+            $('.productswrap').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <h1><a href="">
+                <span>PARIS BAGUETTE</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="250" height="18" viewBox="0 0 250 18">
+                    <g fill="#fff" fill-rule="nonzero">
+                        <path d="M82.103 8.46c-.922-.81-2.306-1.26-3.966-1.44l-4.06-.27c-.83-.09-1.476-.27-1.937-.54-.461-.27-.646-.63-.646-1.17 0-.63.37-1.08 1.015-1.44.738-.36 1.66-.54 2.768-.54 1.015 0 2.03.18 3.044.54.923.36 1.753.81 2.49 1.44l2.03-2.34A11.383 11.383 0 0 0 79.428.81C78.137.36 76.845.18 75.369.18s-2.768.18-3.875.63c-1.107.45-1.937.99-2.583 1.8-.645.81-.922 1.62-.922 2.7 0 1.26.461 2.25 1.384 3.06.922.81 2.306 1.26 3.966 1.35l4.06.27c.83.09 1.568.27 2.029.63.461.36.738.72.738 1.26 0 .72-.369 1.26-1.107 1.71-.738.45-1.845.63-3.229.63-1.291 0-2.398-.18-3.598-.63-1.107-.45-2.029-.99-2.86-1.8l-2.029 2.25c1.015.99 2.306 1.71 3.782 2.25s2.952.81 4.613.81c1.568 0 2.952-.27 4.151-.72 1.2-.45 2.122-1.08 2.768-1.98.646-.81.922-1.8.922-2.88 0-1.26-.46-2.25-1.476-3.06zM59.317.45h3.321v16.29h-3.321zM25.185 0l-9.502 16.74h3.597l1.384-2.43h9.318l1.383 2.43h3.69L25.37 0h-.184zM22.14 11.52l3.137-5.58 3.136 5.58H22.14zM14.483 2.16C13.376.99 11.716.45 9.41.45H0v16.29h3.321v-5.13H9.41c2.214 0 3.874-.54 5.073-1.71 1.015-.99 1.569-2.34 1.569-3.87 0-1.53-.554-2.79-1.569-3.87zm-2.398 5.67c-.277.27-.646.54-1.015.63-.461.18-1.015.27-1.753.27H3.321V3.42h5.996c.738 0 1.292.09 1.753.27.461.18.83.36 1.107.72.37.45.646 1.08.646 1.71 0 .63-.37 1.17-.738 1.71zM52.214 13.5c-.553-.18-1.107-.45-1.476-.63-.461-.27-.923-.63-1.476-1.08-.554-.45-.923-.72-1.2-.9 1.2 0 2.123-.27 3.045-.72a5.273 5.273 0 0 0 1.937-1.8c.462-.81.646-1.62.646-2.52 0-.81-.184-1.44-.461-2.16a5.273 5.273 0 0 0-1.2-1.71C50.924.99 49.447.45 47.51.45h-9.594v16.29h3.321v-5.67h1.2c.645 0 1.29.18 1.752.54.554.36 1.2.9 2.03 1.62.83.72 1.568 1.35 2.214 1.8.645.45 1.383.81 2.306 1.17.923.36 2.03.54 3.229.54h.553v-2.97h-.276c-.83 0-1.476-.09-2.03-.27zM41.236 8.28V3.42h6.089c1.107 0 1.845.27 2.306.81.461.45.646.99.646 1.62 0 .72-.185 1.26-.646 1.62-.554.54-1.292.81-2.306.81h-6.089zM237.27 13.86V9.99h8.763V7.02h-8.764v-3.6h11.255V.45h-14.668v16.29h15.314v-2.88zM215.221 3.42h6.181v13.32h3.321V3.42h6.181V.45h-15.683zM196.956 3.42h6.18v13.32h3.322V3.42h6.088V.45h-15.59zM170.941 9.54c0 .9-.185 1.71-.646 2.34-.369.72-1.015 1.26-1.753 1.62-.738.36-1.568.54-2.49.54-.923 0-1.753-.18-2.491-.54-.738-.36-1.292-.9-1.753-1.62-.369-.72-.646-1.44-.646-2.34V.45h-3.32v9.09c0 1.44.368 2.79 1.014 3.96s1.66 2.07 2.86 2.7c1.2.63 2.675.99 4.243.99 1.569 0 3.045-.36 4.244-.99 1.2-.63 2.214-1.53 2.86-2.7a7.917 7.917 0 0 0 1.014-3.96V.45h-3.32v9.09h.184zM144.557 10.35h5.72c-.37 1.17-1.015 2.07-2.03 2.79-1.015.72-2.214.99-3.598.99a6.878 6.878 0 0 1-3.044-.72c-.922-.45-1.66-1.08-2.122-1.98-.553-.81-.738-1.8-.738-2.88 0-1.08.277-1.98.738-2.88.554-.81 1.2-1.53 2.122-1.98a6.878 6.878 0 0 1 3.044-.72c1.015 0 2.03.18 3.045.63.922.36 1.752.99 2.49 1.62l2.307-2.16c-.923-.99-2.122-1.71-3.506-2.25S146.125 0 144.65 0c-1.752 0-3.32.36-4.797 1.08-1.383.72-2.583 1.8-3.32 3.06-.83 1.26-1.2 2.7-1.2 4.32s.37 3.06 1.2 4.32c.83 1.26 1.937 2.34 3.32 3.06 1.384.72 3.045 1.08 4.797 1.08 1.753 0 3.321-.36 4.705-1.08 1.384-.72 2.491-1.71 3.321-2.97.83-1.26 1.2-2.7 1.2-4.23V7.47h-9.226v2.88h-.092zM109.779 8.01c1.199-.72 1.845-1.8 1.845-3.24 0-1.08-.37-1.98-1.107-2.79C109.502.9 108.118.45 106.365.45H96.31v16.29h10.517c2.121 0 3.69-.63 4.704-1.89.646-.81 1.015-1.8 1.015-2.97 0-.9-.277-1.71-.738-2.34-.461-.63-1.107-1.17-2.03-1.53zM99.63 3.33h6.55c.83 0 1.384.18 1.753.63.276.36.46.72.46 1.17 0 .45-.184.81-.46 1.17-.37.45-1.015.63-1.753.63h-6.55v-3.6zm9.225 9.72c-.369.54-1.015.81-2.03.81h-7.195V9.9h7.196c.922 0 1.568.27 1.937.81.277.36.369.72.369 1.26.092.36-.092.81-.277 1.08zM123.985 0l-9.594 16.74h3.598l1.384-2.43h9.317l1.384 2.43h3.69L124.17 0h-.185zm-3.136 11.52l3.136-5.58 3.137 5.58h-6.273zM182.472 9.99h8.764V7.02h-8.764v-3.6h11.255V.45H179.15v16.29h15.222v-2.88h-11.9z"/>
+                    </g>
+                </svg>
+            </a></h1>
+            <ul class="navleft">
+                <li><a href="">파바의 약속</a></li>
+                <li><a href="">파바 매거진</a></li>
+                <li><a href="">파바 스토리</a></li>
+                <li class="guide">
+                    <a href="">상품 안내</a>
+                    <div class="guidewrap">
+                        <ul class="guide1">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">브레드</a></li>
+                            <li><a href="">케이크</a></li>
+                            <li><a href="">샌드위치/샐러드</a></li>
+                        </ul>
+                        <ul class="guide2">
+                            <li><a href="">선물</a></li>
+                            <li><a href="">디저트/스낵</a></li>
+                            <li><a href="">음료/아이스</a></li>
+                            <li><a href="">간편식</a></li>
+                        </ul>
+                        <a href=""><img src="img/guide.jpeg" alt="guide"></a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navright">
+                <li><a href="">매장 정보</a></li>
+                <li><a href="">주문 정보</a></li>
+                <li><a href="">프로모션</a></li>
+                <li><a href="#" class="searchbutton">
+                    <span>검색</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" class="ionicon" viewBox="0 0 512 512">
+                        <path d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z"/>
+                    </svg>
+                </a></li>
+            </ul>
+        </div>
+        <div class="searchwrap">
+            <form action="">
+                <input type="text" placeholder="검색">
+            </form>
+            <a href="#" class="closesearch">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M289.94 256l95-95A24 24 0 00351 127l-95 95-95-95a24 24 0 00-34 34l95 95-95 95a24 24 0 1034 34l95-95 95 95a24 24 0 0034-34z"/></svg>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section id="title">
+            <ul>
+                <li><a href=""><img src="img/title1.jpg" alt="아마레 체리 빙수"></a></li>
+                <li><a href=""><img src="img/title2.png" alt="프리미엄 디저트 케이크"></a></li>
+                <li><a href=""><img src="img/title3.jpg" alt="마라페어"></a></li>
+            </ul>
+        </section>
+        <section id="magazine">
+            <div class="wrap padding100">
+                <div class="magazinetitle">
+                    <h2><a href="">PB MAGAZINE</a></h2>
+                    <a href="" class="showmore">SHOW MORE</a>
+                </div>
+                <div class="magazinebody">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="img/magazine/magazine1.jpg" alt="충남 천안 블루베리">
+                                <div class="magazineinfo">
+                                    <h3>충남 천안 블루베리</h3>
+                                    <p>충남 천안 블루베리 농가와 함께한 모두가 행복한 행복상생 프로젝트</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/magazine/magazine2.png" alt="논산 딸기">
+                                <div class="magazineinfo">
+                                    <h3>논산 딸기</h3>
+                                    <p>논산 딸기 농가와 함께한 모두가 행복한 행복상생 프로젝트</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/magazine/magazine3.png" alt="문경 오미자">
+                                <div class="magazineinfo">
+                                    <h3>문경 오미자</h3>
+                                    <p>문경 오미자 농가와 함께한 모두가 행복한 행복상생 프로젝트</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="story">
+            <div class="wrap padding100">
+                <div class="storytitle">
+                    <h2><a href="">PB STORY</a></h2>
+                    <a href="" class="showmore">SHOW MORE</a>
+                </div>
+                <div class="storybody">
+                    <ul>
+                        <li>
+                            <div class="storyimg">
+                                <a href="">
+                                    <img src="img/story/story1.jpg" alt="마라페어">
+                                </a>
+                            </div>
+                            <div class="storyinfo">
+                                <a href="">
+                                    <p class="ad">광고</p>
+                                    <h3>🔥얼얼함에 지지마라! 군침이 싹~도는 마라맛 신상 리뷰 | 마라페어</h3>
+                                    <p class="info">☀️뜨거운 여름☀️을 이겨 낼 혀끝이 얼얼한 매운맛을 원한다면?! 🔥얼얼함에 지지 마라!🔥 8월 이달의 제품 마라페어!</p>
+                                </a>
+                                <p class="date">2023-08-08</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="storyimg">
+                                <a href="">
+                                    <img src="img/story/story2.jpg" alt="옥수수 브레드">
+                                </a>
+                            </div>
+                            <div class="storyinfo">
+                                <a href="">
+                                    <p class="ad">광고</p>
+                                    <h3>🌽7월 옥수수 놓칠수 없지!🌽 쿨~해서 더 맛있는 신상 리뷰 | 옥수수브레드 4종</h3>
+                                    <p class="info">'7월 이달의 제품 옥수수브레드 4종' ONE PICK</p>
+                                </a>
+                                <p class="date">2023-07-11</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="storyimg">
+                                <a href="">
+                                    <img src="img/story/story3.jpg" alt="스모어 쿠키">
+                                </a>
+                            </div>
+                            <div class="storyinfo">
+                                <a href="">
+                                    <p class="ad">광고</p>
+                                    <h3>찐한 초코쿠키와 쫀득한 마시멜로우의 만남💙 갓구운 쫀득바삭 스모어 쿠키!</h3>
+                                    <p class="info">꾸덕하고 진한 피칸 더블초코 쿠키🍫 속에 쫀득하고 달콤한 마시멜로우가 들어갔다!</p>
+                                </a>
+                                <p class="date">2023-07-04</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="storyimg">
+                                <a href="">
+                                    <img src="img/story/story4.png" alt="치즈 타르트">
+                                </a>
+                            </div>
+                            <div class="storyinfo">
+                                <a href="">
+                                    <p class="ad">광고</p>
+                                    <h3>폼 미쳤다❤️생글탱글 과일가득 프리미엄 치즈 타르트</h3>
+                                    <p class="info">달콤상큼한 과일과 풍미가득 크림치즈! 폼 제대로 오른 프리미엄 치즈 타르트의 등장!</p>
+                                </a>
+                                <p class="date">2023-05-19</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="promotion">
+            <div class="wrap padding100">
+                <div class="promotiontitle">
+                    <h2><a href="">PROMOTION</a></h2>
+                    <a href="" class="showmore">SHOW MORE</a>
+                </div>
+                <div class="promotionbody">
+                    <ul class="promotionwrap">
+                        <li><a href="" class="promotionimg"><img src="img/promotion/promotion1.jpg" alt="마라페어"></a>
+                            <a href="" class="promotionname">
+                                <h3>얼얼함에 지지 마라! 마라페어🔥</h3>
+                            </a>
+                            <a href="" class="promotionreadmore">
+                                <p>READ MORE</p>
+                            </a>
+                        </li>
+                        <li><a href="" class="promotionimg"><img src="img/promotion/promotion2.png" alt="스페셜 커피"></a>
+                            <a href="" class="promotionname">
+                                <h3>풍미의 차이, 100% 스페셜티 커피로부터☕</h3>
+                            </a>
+                            <a href="" class="promotionreadmore">
+                                <p>READ MORE</p>
+                            </a>
+                        </li>
+                        <li><a href="" class="promotionimg"><img src="img/promotion/promotion3.jpg" alt="아이스티"></a>
+                            <a href="" class="promotionname">
+                                <h3>복숭아 아이스티 1,500원🍑✨</h3>
+                            </a>
+                            <a href="" class="promotionreadmore">
+                                <p>READ MORE</p>
+                            </a>
+                        </li>
+                        <li><a href="" class="promotionimg"><img src="img/promotion/promotion4.jpg" alt="우주패스"></a>
+                            <a href="" class="promotionname">
+                                <h3>파리바게뜨X우주패스 특별 혜택!</h3>
+                            </a>
+                            <a href="" class="promotionreadmore">
+                                <p>READ MORE</p>
+                            </a>
+                        </li>
+                        <li><a href="" class="promotionimg"><img src="img/promotion/promotion5.jpg" alt="카카오페이"></a>
+                            <a href="" class="promotionname">
+                                <h3>카카오페이머니 결제 시 3천원 혜택 안내✨</h3>
+                            </a>
+                            <a href="" class="promotionreadmore">
+                                <p>READ MORE</p>
+                            </a>
+                        </li>
+                        <li><a href="" class="promotionimg"><img src="img/promotion/promotion6.jpg" alt="밤켈 파라솔"></a>
+                            <a href="" class="promotionname">
+                                <h3>밤켈 파라솔세트 사전예약✨</h3>
+                            </a>
+                            <a href="" class="promotionreadmore">
+                                <p>READ MORE</p>
+                            </a>
+                        </li>
+                        <li><a href="" class="promotionimg"><img src="img/promotion/promotion7.jpg" alt="파바 빙수"></a>
+                            <a href="" class="promotionname">
+                                <h3>파바 빙수 2천원 혜택✨</h3>
+                            </a>
+                            <a href="" class="promotionreadmore">
+                                <p>READ MORE</p>
+                            </a>
+                        </li>
+                        <li><a href="" class="promotionimg"><img src="img/promotion/promotion8.jpg" alt="파바 불닭"></a>
+                            <a href="" class="promotionname">
+                                <h3>2023 여름 파바불닭🔥</h3>
+                            </a>
+                            <a href="" class="promotionreadmore">
+                                <p>READ MORE</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <div class="wrap padding100">
+                <div class="productstitle">
+                    <h2><a href="">PRODUCTS</a></h2>
+                    <a href="" class="showmore">SHOW MORE</a>
+                </div>
+                <div class="productsbody">
+                    <ul class="productswrap">
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/1.jpg" alt="">
+                                <h3>발효버터소금빵</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/2.jpg" alt="">
+                                <h3>버터롤</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/3.jpg" alt="">
+                                <h3>스위트 밀크롤</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/4.jpg" alt="">
+                                <h3>추억의 팥과자</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/5.jpg" alt="">
+                                <h3>달콤바삭 크룽지</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/6.png" alt="">
+                                <h3>멜팅치즈치아바타 미트</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/7.png" alt="">
+                                <h3>멜팅치즈치아바타 튜나</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/8.png" alt="">
+                                <h3>멜팅치즈치아바타 피자</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/9.jpg" alt="">
+                                <h3>건강한 로만밀 에그타르타르 샌드위치</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/10.jpg" alt="">
+                                <h3>후르티아오젤리복숭아</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/11.png" alt="">
+                                <h3>와사비 타마고 샌드</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/12.png" alt="">
+                                <h3>통등심 카츠샌드</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/13.png" alt="">
+                                <h3>카츠&타마고 샌드/h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/14.png" alt="">
+                                <h3>아삭복숭아 레어치즈타르트 (15cm)</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/15.png" alt="">
+                                <h3>해피버스데이 케이크 (14cm)</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/16.png" alt="">
+                                <h3>블루베리 쉬폰 (13cm)</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/17.jpg" alt="">
+                                <h3>치키제로티 망고&캐모마일</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/18.jpg" alt="">
+                                <h3>치키제로티 시트러스&민트</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/19.png" alt="">
+                                <h3>우유생크림 카스테라</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/20.jpg" alt="">
+                                <h3>데일리주스 복숭아&망고</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/21.jpg" alt="">
+                                <h3>데일리주스 오렌지</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/22.jpg" alt="">
+                                <h3>부드럽고 촉촉한 굿모닝롤</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/23.png" alt="">
+                                <h3>바스크 치즈케이크</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/24.jpg" alt="">
+                                <h3>순수(秀)우유 케이크 (15cm)</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/25.png" alt="">
+                                <h3>칠리크랩 곤약면 샐러드</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/26.png" alt="">
+                                <h3>라고 헤이즐넛 웨하스</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/27.png" alt="">
+                                <h3>라고 카카오 웨하스</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/28.png" alt="">
+                                <h3>갓구운 쫀득바삭 자이언트 초코칩 쿠키</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/29.png" alt="">
+                                <h3>갓구운 쫀득바삭 자이언트 스모어쿠키</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/30.png" alt="">
+                                <h3>갓구운 쫀득바삭 자이언트 솔티드 카라멜 쿠키</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/31.png" alt="">
+                                <h3>단백가득 닭가슴살바 멀티그레인</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="productsitem">
+                                <img src="img/products/32.png" alt="">
+                                <h3>온브레드 크림치즈 딸기</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="instagram">
+            <div class="padding50">
+                <h2><a href="">@parisbaguette_kr</a></h2>
+                <p>Instagram</p>
+            </div>
+        </section>
+        <section id="notice">
+            <div class="paddingT50">
+                <ul>
+                    <li>
+                        <a href="">
+                            <h2>고객센터</h2>
+                            <p>고객의 소리를 적극 경청하고 고객만족 향상 활동을 지속적으로 실천합니다.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h2>제휴 안내</h2>
+                            <p>다양한 온라인 제휴와 카드 정보를 확인하세요.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h2>공지사항</h2>
+                            <p>파리바게뜨 공지내용을 확인하세요.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <ul class="asidemenu">
+            <li>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12">
+                        <path fill="#FFF" fill-rule="nonzero" d="M2.12 12L10 4.198 17.88 12 20 9.901 10 0 0 9.901z" opacity=".8"/>
+                    </svg>
+                    <p>TOP</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" viewBox="0 0 15 20">
+                        <g fill="none" fill-rule="evenodd" transform="translate(-4.5 -2)">
+                            <path fill="#FFF" fill-rule="nonzero" d="M12 3.44A5.56 5.56 0 0 1 17.56 9c0 3.23-3.39 8.1-5.56 10.78C9.83 17.1 6.44 12.24 6.44 9A5.56 5.56 0 0 1 12 3.44zM12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/>
+                            <circle cx="12" cy="9" r="2.5" fill="#FFF" fill-rule="nonzero"/>
+                            <path d="M0 0h24v24H0z"/>
+                        </g>
+                    </svg>
+                    <p>매장정보</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12.66 16">
+                        <image width="53" height="67" transform="scale(.24)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAABDCAYAAAA8nU2sAAAACXBIWXMAAC4jAAAuIwF4pT92AAAE6klEQVRogd3bW6hVRRjA8d8+Hk2l24NpitVD0E2LjHoRu2gXjCgK7Y49SA9FdKHA7oaRSFRUhEQJFWFU0OUhwTCym3QhREXJhMzIyizR7FiJepweZm/POvvsfc7ea9bu7M4fNnvPmjXfzLfmm29mvjW7FELQQsbhXlyE4/AXVuF5fNKyWkMIrfqcG0LYEeqzoFV1l1rUU+OwAWP6e564Tey1QukoWmCZJ/RVaDe6M+kS7sORRVfeKqXmZH4H3IqxOB07M3nH47SiK+8sSM4MTMFwHFGV9zlexT5sxCN4LpM/D1+U27IFy8VezU/ioBwbQljRjzMIIYTlIYQRmTKzB7h/ewhhRkq7UsxvBF7HxQPc1y2aYIV9A9w/FsvEns9FtfldjuswSTSl/lxjB05toI6V2J9JrxbN66h+yozC+/i9AfnbxIfwErpwyKWPwhLc2ICQeryJLzGsnB6GzXi7xr2TcYnoAYkPbyQWJtT/A2ZiU0WpJbg5QSDRs21IlJE6af6CczpxptoKVSooNXi9pKeX8tBd49pAbajOm4B5pRDCu7gyk/GxOK90ic7gOz3z2ffiQ+jAC7g2U+43vcdOs3SL81aFrbgQu/AQ7ixfD3gQS8sKzcFjmXLbOjE9c2Ev7sC35XS1szigPBjxd1WjxuZQpD+68XO5nj+r8naKShPH4U04qZwe36H3ZLlHXEk3wo+5mto4u3CwTl61OW7JJjrlH5zPir08uUYlKZTEnpgvWk7TpCi1CxeI00GRlERlajmOhkhd+wV9x9ag06pV+qBS1Cp9ouj+UwnisifXWKqQqlRJXAZdlSgny0+YqsdlN02q+V0hLoKLZCKeThGQqlSX9PVaLRpZndcl1fxW4gFxRi9KuY24K0VAEY7iyfKnbRiSLn1IKlWE+Q3HNMU8oIBN4uo8N6lKjRRDYLmDJDXoxtlYm1dA6tOdKW7ji2SYGBvMTapSW9Xf86SwNqVwqvmtxvV6h5lTWY8FKQKKcBTvlD9tw5B06UNSqSLMb5y4Wi8qTrEOX6UISFVqDNZgfKKcai4VY+m5SDW/aTgmUUYtbkkpnKrUeolb7zq8l1I41fw24zwx/FzUfmoDXksRUISjWFP+tA1D0qUPSaWKML8puKbBe9fhjQLq7JdUpU7Epzi8yTqXZtKniC/L6q329+KEZhqVqtQZ4kaxGS7To9QNeFkx0d1DpI6pzzQfo3ux/F3CXPkU6nf6SO2pHeKYanTttwZfl3+XMDpHnfvFV7Z1KcJRbBff7ueh+om/JbbpV/GMxvk1yszHh/0JLeqtRx6CvkpdXf4+Gh9U5R0UFXp8IMGDqVQ9JogmOqHq+qMaPDzSbpPvGHykr0ILNRG3aDelVuk5OlBhkSZDZu1mfidXpReJb1Waot2UqnAQT+HhPIWbVWqieHJyeJ7KajCpzvVnxBObuWhEqey4Gy2GmltFEBW6J0VII45iT0oFTbIYd6cKGUipA+JxnVbEy6tZjNuLEDSQ+QVxsC4Vtxet+g9FlxjvKIROjZngpqIq/C/o0DvENRKHDVJbUugVe+wQD/NWOBz3y7clGCxm46xM+o9SCGG6eB4iy27x6FuR5/hawQgcq3c7X6mcdl4mbrP/7+zG1IqTmCvxTUMb8A9m4Zvs/6eGicdnZokr5YH+QdAOBDFGskJcK26BfwGNrUPn3GJN8gAAAABJRU5ErkJggg=="/>
+                      </svg>
+                    <p>주문정보</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/aside4.png" alt="aside4">
+                    <p>파바의 약속</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16">
+                        <g fill="none" fill-rule="evenodd">
+                            <path d="M-3-4h24v24H-3z"/>
+                            <path fill="#FFF" fill-rule="nonzero" d="M17 0H1v2h16V0zm1 10V8l-1-5H1L0 8v2h1v6h10v-6h4v6h2v-6h1zm-9 4H3v-4h6v4z"/>
+                        </g>
+                    </svg>
+                    <p>창업안내</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 351.61 350.19" style="enable-background:new 0 0 351.61 350.19;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0{fill:#FFFFFF;}
+                        </style>
+                        <g>
+                            <path class="st0" d="M250.12,168.83c12.49-11.62,18.74-26.87,18.74-45.77c0-18.59-6.25-33.7-18.74-45.33   c-12.5-11.62-29.35-17.43-50.56-17.43H86.67v99.81H56.16v26.15h30.51v105.04h30.51V186.27h82.38   C220.77,186.27,237.62,180.46,250.12,168.83z M117.18,160.55V86.02h76.71c14.53,0,25.64,3.42,33.34,10.24   c7.7,6.83,11.55,15.91,11.55,27.24c0,11.05-3.86,19.98-11.55,26.81c-7.7,6.83-18.82,10.24-33.34,10.24H117.18z"/>
+                            <path class="st0" d="M133.31,249.03h77.58c9.87,0,17.58-2.1,23.1-6.32c5.52-4.21,8.28-10.09,8.28-17.65   c0-15.69-10.46-23.54-31.38-23.54h-77.58V249.03z"/>
+                            <path class="st0" d="M291.11,0H60.5C27.09,0,0,27.09,0,60.5v229.18c0,33.42,27.09,60.5,60.5,60.5h230.6   c33.42,0,60.5-27.09,60.5-60.5V60.5C351.61,27.09,324.52,0,291.11,0z M284.99,284.99C267.26,299.66,242.85,307,211.76,307H70.11   V201.52H40.03v-57.1h30.07V44.61h129.02c18.59,0,34.5,3.49,47.73,10.46c13.22,6.97,23.17,16.42,29.86,28.33   c6.68,11.92,10.03,25.14,10.03,39.66c0,7.27-1.09,14.68-3.27,22.23c-2.18,7.56-4.87,13.66-8.06,18.31   c24.12,14.82,36.18,35.3,36.18,61.46C311.58,250.34,302.71,270.32,284.99,284.99z"/>
+                            <path class="st0" d="M215.25,107.37c-4.36-3.77-10.75-5.67-19.18-5.67h-62.77v43.15h62.77c17.14,0,25.72-7.12,25.72-21.36   C221.79,116.53,219.61,111.15,215.25,107.37z"/>
+                            <path class="st0" d="M264.94,177.55c-5.52,6.39-13.51,11.77-23.97,16.13c5.23,2.91,9.59,7.05,13.08,12.42   c3.49,5.38,5.23,11.7,5.23,18.96c0,12.5-4.43,22.23-13.29,29.2c-8.87,6.97-21.29,10.46-37.27,10.46h-75.4v26.59h81.94   c23.54,0,42.5-6.17,56.88-18.52c14.38-12.35,21.58-28.26,21.58-47.73c0-9.59-2.61-18.74-7.85-27.46   C280.63,188.88,273.66,182.2,264.94,177.55z"/>
+                        </g>
+                        </svg>
+                    <p>파바앱</p>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <footer>
+        <section id="foot">
+            <div class="wrap">
+                <ul class="fnbtop padding100">
+                    <li>
+                        <h2>Info</h2>
+                        <ul class="footinfo">
+                            <li><a href="">브랜드소개</a></li>
+                            <li><a href="">창업안내</a></li>
+                            <li><a href="">B2B 주문 및 문의</a></li>
+                            <li><a href="">안전보건경영방침</a></li>
+                            <li><a href="">거래희망사전등록</a></li>
+                            <li><a href="">윤리신고센터</a></li>
+                            <li><a href="">채용</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Contact Us</h2>
+                        <ul class="footcontact">
+                            <li><a href="">고객센터</a></li>
+                            <li><a href="">080-731-2027</a></li>
+                            <li>평일 09:00 ~ 17:00 (점심 12:00 ~ 13:00)</li>
+                            <li><a href="">고객칭찬</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="footlogo">
+                            <li><a href=""><img src="img/footlogo/logo1.png" alt="spc"></a></li>
+                            <li><a href=""><img src="img/footlogo/logo2.png" alt="ccm"></a></li>
+                            <li><a href=""><img src="img/footlogo/logo3.png" alt="ncsi"></a></li>
+                            <li><a href=""><img src="img/footlogo/logo4.png" alt="kcsi"></a></li>
+                            <li><a href=""><img src="img/footlogo/logo5.png" alt="ks-sqi"></a></li>
+                            <li><a href=""><img src="img/footlogo/logo6.png" alt="nbci"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Follow Us</h2>
+                        <ul class="sns">
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 30 30">
+                                        <g transform="translate(-20 -849)">
+                                            <circle style="fill:#fff" data-name="타원 62" cx="15" cy="15" r="15" transform="translate(20 849)"/>
+                                            <path data-name="패스 18418" d="M329.307 154.279v-7.244h2.521l.377-2.823h-2.9v-1.8c0-.817.235-1.375 1.45-1.375h1.551v-2.525a21.505 21.505 0 0 0-2.26-.112 3.464 3.464 0 0 0-3.765 3.732v2.082h-2.528v2.823h2.528v7.244z" transform="translate(-292.756 717.603)" style="fill:#454a56"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 30 30">
+                                        <g transform="translate(-188 -848.787)">
+                                            <circle style="fill:#fff" data-name="타원 62" cx="15" cy="15" r="15" transform="translate(188 848.787)"/>
+                                            <g data-name="그룹 69057">
+                                                <path data-name="패스 18424" d="M160.974 365.359h-6.3a4.3 4.3 0 0 0-4.3 4.3v6.3a4.3 4.3 0 0 0 4.3 4.3h6.3a4.3 4.3 0 0 0 4.3-4.3v-6.3a4.3 4.3 0 0 0-4.3-4.3m2.928 10.706a2.854 2.854 0 0 1-2.854 2.853h-6.443a2.854 2.854 0 0 1-2.854-2.853v-6.444a2.854 2.854 0 0 1 2.854-2.854h6.443a2.854 2.854 0 0 1 2.854 2.854z" transform="translate(45.067 491.088)" style="fill:#454a56"/>
+                                                <path data-name="패스 18425" d="M164.154 375.371a3.865 3.865 0 1 0 3.864 3.864 3.865 3.865 0 0 0-3.864-3.864m0 6.37a2.505 2.505 0 1 1 2.505-2.506 2.505 2.505 0 0 1-2.505 2.506" transform="translate(38.739 484.695)" style="fill:#454a56"/>
+                                                <path data-name="패스 18426" d="M180.437 372.475a.9.9 0 1 0 .9.9.9.9 0 0 0-.9-.9" transform="translate(26.45 486.544)" style="fill:#454a56"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 30 30">
+                                        <g transform="translate(-132 -848.831)">
+                                            <circle style="fill:#fff" data-name="타원 62" cx="15" cy="15" r="15" transform="translate(132 848.831)"/>
+                                            <path data-name="패스 18423" d="M413.972 257.8a2.443 2.443 0 0 0-2.283-2.081c-.715-.1-4.157-.228-6.889-.228s-6.174.128-6.889.228a2.442 2.442 0 0 0-2.282 2.081 32.34 32.34 0 0 0-.288 3.924v.212a32.408 32.408 0 0 0 .288 3.927 2.44 2.44 0 0 0 2.282 2.077c.715.1 4.16.228 6.9.228h-.012c2.735 0 6.177-.128 6.895-.229a2.444 2.444 0 0 0 2.283-2.077 32.675 32.675 0 0 0 .287-3.927v-.212a32.606 32.606 0 0 0-.292-3.923zm-11.172 7.258v-6.235l5.148 2.9z" transform="translate(-258.121 602.459)" style="fill:#454a56"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <select name="brand" id="brandsites">
+                            <option class="brandtitle" value="">Brand Sites</option>
+                            <optgroup label="파리크라상">
+                                <option value="">파리크라상</option>
+                                <option value="">파스쿠찌</option>
+                                <option value="">파리바게뜨 중국</option>
+                            </optgroup>
+                            <optgroup label="비알코리아(주)">
+                                <option value="">배스킨라빈스</option>
+                                <option value="">던킨도너츠</option>
+                            </optgroup>
+                            <optgroup label="기타">
+                                <option value="">(주)샤니</option>
+                                <option value="">(주)삼립식품</option>
+                                <option value="">해피포인트</option>
+                                <option value="">SPC외식브랜드</option>
+                                <option value="">디퀸즈케이터링</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                </ul>
+                <ul class="fnbbtm">
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">이메일무단수집거부</a></li>
+                    <li><a href="">영상정보처리기기운영관리방침</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="portfolio">
+            <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+        </section>
+    </footer>
+</body>
+</html>

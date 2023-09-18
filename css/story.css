@@ -1,0 +1,105 @@
+section#story {
+  
+}
+section#story div.wrap {
+  
+}
+section#story div.wrap div.storytitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+section#story div.wrap div.storytitle h2 {
+  
+}
+section#story div.wrap div.storytitle h2 a {
+  
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 2;
+}
+section#story div.wrap div.storytitle a.showmore {
+  
+  border-bottom: 2px solid;
+  line-height: 2;
+  font-size: 14px;
+  font-weight: 700;
+}
+section#story div.wrap div.storybody {
+  
+}
+section#story div.wrap div.storybody ul {
+  
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+section#story div.wrap div.storybody ul li {
+  
+  width: 50%;
+  display: flex;
+}
+section#story div.wrap div.storybody ul li div.storyimg {
+  
+  width: 45%;
+}
+section#story div.wrap div.storybody ul li div.storyimg a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+section#story div.wrap div.storybody ul li div.storyimg a img {
+  width: 100%;
+  scale: 1;
+  transition: all 0.5s;
+}
+section#story div.wrap div.storybody ul li div.storyimg a:hover img {
+  scale: 1.1;
+}
+section#story div.wrap div.storybody ul li div.storyinfo {
+  
+  width: 55%;
+  padding: 0 25px;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+section#story div.wrap div.storybody ul li div.storyinfo a {
+  
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+  justify-content: space-between;
+}
+section#story div.wrap div.storybody ul li div.storyinfo a p:hover {
+  text-decoration: underline;
+}
+section#story div.wrap div.storybody ul li div.storyinfo a p.ad {
+  
+  color: #023586;
+  font-size: 14px;
+}
+section#story div.wrap div.storybody ul li div.storyinfo a h3 {
+  
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+section#story div.wrap div.storybody ul li div.storyinfo a h3:hover {
+  text-decoration: underline;
+}
+section#story div.wrap div.storybody ul li div.storyinfo a p.info {
+  
+  line-height: 1.5;
+  font-size: 14px;
+  color: gray;
+}
+section#story div.wrap div.storybody ul li div.storyinfo p.date {
+  
+  font-size: 10px;
+}

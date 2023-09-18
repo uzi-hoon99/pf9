@@ -1,0 +1,175 @@
+header {
+  
+  background-color: #023586;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 150;
+}
+header div.wrap {
+  
+  display: flex;
+}
+header div.wrap h1 {
+  
+  order: 2;
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header div.wrap h1 a {
+  
+}
+header div.wrap h1 a span {
+  display: none;
+}
+header div.wrap h1 a svg {
+  
+}
+header div.wrap > ul {
+  
+  display: flex;
+  width: calc(100% / 3);
+  align-items: center;
+}
+header div.wrap ul li {
+  
+}
+header div.wrap > ul > li > a {
+  
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 40px 15px;
+  display: block;
+  position: relative;
+}
+header div.wrap > ul > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: all 0.5s;
+}
+header div.wrap ul li:hover a::after {
+  width: 100%;
+  left: 0;
+} 
+header div.wrap ul.navleft {
+  
+  order: 1;
+  justify-content: start;
+}
+header div.wrap ul.navleft li {
+  
+}
+header div.wrap ul.navleft li a {
+  
+}
+header div.wrap ul.navleft > li:nth-child(1) > a {
+  color: #feda24;
+}
+header div.wrap ul.navleft > li:nth-child(1) > a::after {
+  background-color: #feda24;
+}
+header div.wrap ul.navright {
+  
+  order: 3;
+  justify-content: end;
+}
+header div.wrap ul.navright li {
+  
+}
+header div.wrap ul.navright li a {
+  
+}
+header div.wrap ul.navright li:nth-child(4) a {
+  
+  padding: 15px;
+}
+header div.wrap ul.navright li:nth-child(4) a span {
+  display: none;
+}
+header div.wrap ul.navright li:nth-child(4) a svg {
+  width: 20px;
+}
+header div.wrap ul.navright li:nth-child(4) a::after {
+  display: none;
+}
+header div.searchwrap {
+  
+  width: 100%;
+  display: flex;
+  background-color: white;
+  position: fixed;
+  top: -94px;
+  z-index: 200;
+  transition: all 0.5s;
+}
+header div.searchwrap form {
+  
+  width: 95%;
+  padding: 30px 0 30px 30px;
+}
+header div.searchwrap form input {
+  
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  height: 34px;
+  font-size: 25px;
+  font-weight: 500;
+}
+header div.searchwrap a {
+  
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+header div.searchwrap a svg {
+  
+  width: 50%;
+}
+header div.wrap ul.navleft li.guide {
+  
+  position: relative;
+}
+header div.wrap ul.navleft li.guide div.guidewrap {
+  
+  position: absolute;
+  background-color: white;
+  display: flex;
+  padding: 15px;
+}
+header div.wrap ul.navleft li.guide div.guidewrap ul {
+  
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  gap: 5px;
+}
+header div.wrap ul.navleft li.guide div.guidewrap li {
+  
+}
+header div.wrap ul.navleft li.guide div.guidewrap li a {
+  
+  display: block;
+  padding: 10px;
+  color: gray;
+  font-weight: 500;
+}
+header div.wrap ul.navleft li.guide div.guidewrap li a:hover {
+  color: #023586;
+}
+.searchactive {
+  top: 0 !important;
+}
+a.mobilemenubutton {
+  display: none;
+}
